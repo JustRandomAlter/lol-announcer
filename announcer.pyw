@@ -9,25 +9,31 @@ import threading
 
 SOUNDS_FOLDER = "sounds/"
 EVENT_SOUNDS = {
-    "Welcome": ["welcometosummonersrift.mp3"],
-    "MinionsSpawningSoon": ["30secondsuntilminionsspawn.mp3"],
-    "MinionsSpawning": ["minionshavespawned.mp3"],
-    "FirstBlood": ["firstblood.mp3"],
-    "PlayerKill": ["youhaveslainanenemy1.mp3", "youhaveslainanenemy2.mp3", "youhaveslainanenemy3.mp3"],
-    "PlayerDeath": ["youhavebeenslain1.mp3", "youhavebeenslain2.mp3"],
-    "AllyDeath": ["anallyhasbeenslain1.mp3", "anallyhasbeenslain2.mp3"],
-    "AllyKill": ["anenemyhasbeenslain1.mp3", "anenemyhasbeenslain2.mp3", "anenemyhasbeenslain3.mp3"],
-    "AllyDoubleKill": ["doublekill1.mp3", "doublekill2.mp3"],
-    "AllyTripleKill": ["triplekill.mp3"],
-    "AllyQuadraKill": ["quadrakill.mp3"],
-    "AllyPentaKill": ["pentakill1.mp3", "pentakill2.mp3"],
+    "Welcome": ["welcometosummonersrift1.mp3", "welcometosummonersrift2.mp3", "welcometosummonersrift3.mp3", "welcometosummonersrift4.mp3"],
+    "MinionsSpawningSoon": ["30secondsuntilminionsspawn1.mp3", "30secondsuntilminionsspawn2.mp3", "30secondsuntilminionsspawn3.mp3", "30secondsuntilminionsspawn4.mp3", "30secondsuntilminionsspawn5.mp3", "30secondsuntilminionsspawn6.mp3", "30secondsuntilminionsspawn7.mp3", "30secondsuntilminionsspawn8.mp3", "30secondsuntilminionsspawn9.mp3", "30secondsuntilminionsspawn10.mp3"],
+    "MinionsSpawning": ["minionshavespawned1.mp3", "minionshavespawned2.mp3", "minionshavespawned3.mp3"],
+    "FirstBlood": ["firstblood1.mp3", "firstblood2.mp3", "firstblood3.mp3", "firstblood4.mp3"],
+    "PlayerKill": ["youhaveslainanenemy1.mp3", "youhaveslainanenemy2.mp3", "youhaveslainanenemy3.mp3", "youhaveslainanenemy4.mp3", "youhaveslainanenemy5.mp3", "youhaveslainanenemy6.mp3", "youhaveslainanenemy7.mp3", "youhaveslainanenemy8.mp3", "youhaveslainanenemy9.mp3"],
+    "PlayerDeath": ["youhavebeenslain1.mp3", "youhavebeenslain2.mp3", "youhavebeenslain3.mp3", "youhavebeenslain4.mp3", "youhavebeenslain5.mp3", "youhavebeenslain6.mp3", "youhavebeenslain7.mp3", "youhavebeenslain8.mp3", "youhavebeenslain9.mp3" ],
+    "AllyDeath": ["anallyhasbeenslain1.mp3", "anallyhasbeenslain2.mp3", "anallyhasbeenslain3.mp3"],
+    "AllyKill": ["anenemyhasbeenslain1.mp3", "anenemyhasbeenslain2.mp3", "anenemyhasbeenslain3.mp3", "anenemyhasbeenslain4.mp3", "anenemyhasbeenslain5.mp3", "anenemyhasbeenslain6.mp3", "anenemyhasbeenslain7.mp3"],
+    "AllyDoubleKill": ["doublekill1.mp3", "doublekill2.mp3", "doublekill3.mp3", "doublekill4.mp3", "doublekill5.mp3", "doublekill6.mp3", "doublekill7.mp3", "doublekill8.mp3"],
+    "AllyTripleKill": ["triplekill.mp3", "triplekill1.mp3", "triplekill2.mp3", "triplekill3.mp3", "triplekill4.mp3", "triplekill5.mp3", "triplekill6.mp3"],
+    "AllyQuadraKill": ["quadrakill.mp3", "quadrakill1.mp3", "quadrakill2.mp3", "quadrakill3.mp3", "quadrakill4.mp3", "quadrakill5.mp3", "quadrakill6.mp3"],
+    "AllyPentaKill": ["pentakill1.mp3", "pentakill2.mp3", "pentakill4.mp3", "pentakill5.mp3", "pentakill6.mp3", "pentakill7.mp3"],
+    "PlayerKillingSpree" : ["killingspree.mp3","killingspree1.mp3","killingspree2.mp3","killingspree3.mp3"],
+    "PlayerRampage" : ["playerrampage.mp3","playerrampage1.mp3","playerrampage2.mp3","playerrampage3.mp3"],
+    "PlayerUnstoppable" : ["playerunstoppable1.mp3","playerunstoppable2.mp3","playerunstoppable3.mp3","playerunstoppable4.mp3"],
+    "PlayerDominating" : ["playerdominating1.mp3","playerdominating2.mp3","playerdominating3.mp3","playerdominating4.mp3"],
+    "PlayerGodlike" : ["playergodlike1.mp3","playergodlike2.mp3","playergodlike3.mp3","playergodlike4.mp3"],
+    "PlayerLegendary" : ["playerlegendary1.mp3","playerlegendary2.mp3","playerlegendary3.mp3","playerlegendary4.mp3"],
     "EnemyDoubleKill": ["enemydoublekill.mp3"],
     "EnemyTripleKill": ["enemytriplekill.mp3"],
     "EnemyQuadraKill": ["enemyquadrakill.mp3"],
-    "EnemyPentaKill": ["enemypentakill.mp3"],
-    "AllyAce": ["allyace.mp3"],
+    "EnemyPentaKill": ["enemypentakill.mp3", "enemypentakill1.mp3", "enemypentakill2.mp3", "enemypentakill3.mp3", "enemypentakill4.mp3"],
+    "AllyAce": ["allyace1.mp3", "allyace2.mp3", "allyace3.mp3", "allyace4.mp3", "allyace5.mp3", "allyace6.mp3", "allyace7.mp3", "allyace8.mp3", "allyace9.mp3"],
     "EnemyAce": ["enemyace.mp3"],
-    "Executed": ["executed1.mp3", "executed2.mp3", "executed3.mp3"],
+    "Executed": ["executed1.mp3", "executed2.mp3", "executed3.mp3", "executed4.mp3", "executed5.mp3", "executed6.mp3"],
     "AllyTurretKill": ["yourteamhasdestroyedaturret.mp3"],
     "EnemyTurretKill": ["yourturrethasbeendestroyed1.mp3", "yourturrethasbeendestroyed2.mp3"],
     "AllyInhibitorKill": ["yourteamhasdestroyedaninhibitor1.mp3", "yourteamhasdestroyedaninhibitor2.mp3"],
@@ -65,12 +71,15 @@ previous_game_time = 0
 game_time = 0
 previous_event_count = 0
 event_count = 0
+player_killStreak = 0
+
 
 # Get event count so if the program is started in the middle of the match it doesn't play every announcement
 # sound which happened until that point.
 try:
     # Get all data from the game in JSON format.
     all_game_data = requests.get('https://127.0.0.1:2999/liveclientdata/allgamedata', verify=False).json()
+    
     events = all_game_data["events"]["Events"]
     event_count = len(events)
     previous_event_count = event_count
@@ -85,6 +94,7 @@ def announcer_loop():
     global game_time
     global previous_event_count
     global event_count
+    global player_killStreak 
     
     while True:
         try:
@@ -136,6 +146,7 @@ def announcer_loop():
 
                 # Someone got first blood.
                 if event_name == "ChampionKill" and event_index < event_count - 1 and events[event_index + 1]["EventName"] == "FirstBlood":
+                    print("Got First Blood Event")
                     play_event_sound("FirstBlood")
                     event_index += 1
                 # Someone got a multikill.
@@ -165,16 +176,36 @@ def announcer_loop():
                 # Someone got a kill.
                 elif event_name == "ChampionKill":
                     # Player got a kill.
+                    print ("Got a Player_Kill Event")
                     if event["KillerName"] == player_name:
-                        play_event_sound("PlayerKill")
+                        if player_killStreak < 3:
+                            play_event_sound("PlayerKill")
+                        if player_killStreak == 3:
+                            play_event_sound("PlayerKillingSpree")
+                        if player_killStreak == 4:
+                            play_event_sound("PlayerRampage")
+                        if player_killStreak == 5:
+                            play_event_sound("PlayerUnstoppable")
+                        if player_killStreak == 6:
+                            play_event_sound("PlayerDominating")
+                        if player_killStreak == 7:
+                            play_event_sound("PlayerGodlike")
+                        if player_killStreak > 7:
+                            play_event_sound("PlayerLegendary")
+                        player_killStreak += 1
+                        #print(player_killStreak)
+                        
                     # Ally got a kill.
                     elif event["KillerName"] in ally_team_players:
+                        print ("Got an Enemy_Kill Event")
                         play_event_sound("AllyKill")
                     # Enemy got a kill.
                     elif event["KillerName"] in enemy_team_players:
                         # Player was killed.
                         if event["VictimName"] == player_name:
+                            print ("Got an Player_Death Event")
                             play_event_sound("PlayerDeath")
+                            player_killStreak = 0
                         # Ally was killed.
                         else:
                             play_event_sound("AllyDeath")
@@ -237,6 +268,7 @@ def announcer_loop():
                     elif event["Result"] == "Lose":
                         play_event_sound("Defeat")    
                 # TODO: killing streaks
+
             previous_game_time = game_time
             previous_event_count = event_count
         except Exception as e:
